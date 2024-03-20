@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+No Results Found
+{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h2>No Results Found</h2>
+    <p>Sorry, we couldn't find any results for your search query. Please try again with different keywords.</p>
+    <a href="{% url 'index' %}" class="btn btn-primary">Return to Home</a>
+</div>
+{% endblock %}
